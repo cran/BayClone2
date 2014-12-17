@@ -1,0 +1,6 @@
+useDynLib(BayClone2)
+export(export_N_n)
+export(BayClone2)
+export(fn_post_C)
+export(fn_posterior_point)
+import(combinat)

@@ -1,0 +1,13 @@
+b882593320f1fad2c333b5fccf4b78af *DESCRIPTION
+7702f203b58979ebbc31bfaeb44f219c *LICENSE
+db29e277a829aadf23e590174707b83f *NAMESPACE
+5b37591c19871f8000a5ac29218042cb *R/fn_BayClone2.R
+3cb669c67c7ee4462f5109784e6b1a7f *data/BayClone2_Simulation1_mut.txt.gz
+e9d61f33829a06dc986d3122250aae97 *data/BayClone2_Simulation1_tot.txt.gz
+0d8c7886210873cbfbe7f2aa6f8d6a04 *man/BayClone2.Rd
+052d5155f142159cb2c585b773f0dcd3 *man/BayClone2_Simulation1_mut.Rd
+306ed51a9c874f488e7b95641af14558 *man/BayClone2_Simulation1_tot.Rd
+5fbf5d380f14d7b8786a0a5f933e72f9 *man/export_N_n.Rd
+3fd9752ee61c31adfba15ed7054f8671 *man/fn_post_C.Rd
+71090f9089c80dc0a06da014da670027 *man/fn_posterior_point.Rd
+e0372b45d4194859485b7255028868e5 *src/BayClone2.cpp

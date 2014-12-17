@@ -79,14 +79,16 @@ extern "C"
 		FILE* fp;
 		FILE* ft1,* ft2;
 		char vcf_line[MAX_LINE_LEN], header_line[MAX_LINE_LEN];
-		char* pch,*pch1,*pch2;
+		char* pch,*pch1;
+		//char *pch2;
 		int cnt1,s_cnt;
 		int AD_fld;
 		int GT_fld;
 		char fmt_fld[MAX_FLD_LEN];
 		int i,j;
 		int e_flag;
-		int N_tot,n_alt,N_minus_n;
+		//int N_tot;
+		int n_alt,N_minus_n;
 		char**N_n_cnt_str;
 		int *N_tot_samples,*n_alt_samples;
 
@@ -1864,7 +1866,7 @@ extern "C"
                                     log(1.0 - p[i_t*S + i_s]);
             }
         }
-        if (isnan(loglike)) loglike= -INFINITY;
+        if (isnan(loglike)) loglike= R_NegInf;
         
         return(loglike);
     }
@@ -2030,7 +2032,7 @@ extern "C"
             }
         }
         
-        mmin_dist = INFINITY;
+        mmin_dist = R_PosInf;
         
         for (i_N = 0; i_N < ind_N; i_N++) {
             tmp_min = 0.0;
@@ -2087,7 +2089,7 @@ extern "C"
             }
         }
         
-        mmin_dist = INFINITY;
+        mmin_dist = R_PosInf;
  
         for (i_N = 0; i_N < ind_N; i_N++) {
             tmp_min = 0.0;

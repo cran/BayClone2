@@ -314,7 +314,6 @@ fn_post_C <- function(C_sam, min_C, max_C)
         
         for(i.c in min_C:max_C) post_dist[i.c, 2] <- sum(C_sam==i.c)/n_sam
         
-        post_dist <- post_dist[(min_C:max_C),]
         colnames(post_dist) <- c("C", "Post_Prob")
         
         return(post_dist)
